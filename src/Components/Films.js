@@ -86,7 +86,7 @@ export default function Films() {
                     />
                 </form>
             </header>
-            <main 
+            <main ref={main}
         id="main">
         </main>
         </div>
