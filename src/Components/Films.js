@@ -76,7 +76,7 @@ export default function Films() {
     return(
         <div>
             <header>
-                <form id="form">
+                <form id="form" ref={form}>
                     <img className="image" width="100pxs"  src="https://static.miraheze.org/closinglogosgroupwiki/e/e1/GW266H196.jpeg.jpg?20211115093351" alt="logo"/>
                     <input
                         type="text"
