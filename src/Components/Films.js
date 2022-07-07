@@ -7,9 +7,9 @@ export default function Films() {
     const SEARCHAPI =
         "https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=";
 
-    const main = document.getElementById("main");
-    const form = document.getElementById("form");
-    const search = document.getElementById("search");
+    const main = useRef(null);
+    const form = useRef(null);
+    const search = useRef(null);
 
 
     getMovies(APIURL);
@@ -24,8 +24,7 @@ export default function Films() {
     }
 
     function showMovies(movies) {
-        main.innerHTML = "";
-
+       
         movies.forEach((movie) => {
             const { poster_path, title, vote_average, overview } = movie;
 
