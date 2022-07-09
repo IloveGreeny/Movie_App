@@ -1,5 +1,5 @@
-
 import { useRef, useState } from "react";
+import "./Films.css"
 
 export default function Films() {
     const APIURL =
